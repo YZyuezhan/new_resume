@@ -1,0 +1,53 @@
+.card {
+  width: 80%;
+  max-height: calc(100% - 100px);
+  position: fixed;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  transition: all .5s;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.card_view {
+  height: 500px;
+  width: 100%;
+  overflow-y: auto;
+  padding: 0px 10px;
+}
+
+.card_view::-webkit-scrollbar {
+  width: 10px;
+}
+
+.card_view::-webkit-scrollbar-track {
+  background: rgb(179, 177, 177);
+  border-radius: 10px;
+}
+
+.card_view::-webkit-scrollbar-thumb {
+  background: #276870ea;
+  border-radius: 10px;
+}
+
+.card_view::-webkit-scrollbar-thumb:hover {
+  background: #359fadea;
+  border-radius: 10px;
+}
+
+.card_view::-webkit-scrollbar-thumb:active {
+  background: #21d0e7;
+  border-radius: 10px;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+  background-image: url('../image/s11.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

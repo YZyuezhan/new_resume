@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.user,
+.about,
+.skills,
+.works,
+.contact {
+  position: relative;
+}
+
+.user {
+  width: 60%;
+  height: calc(100% - 350px);
+  overflow: hidden;
+  background-image: url('../image/r2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center auto;
+  min-height: 550px;
+}
+
+.about {
+  width: 40%;
+  height: calc(100% - 350px);
+  overflow: hidden;
+  min-height: 550px;
+  background-image: url('../image/ab11.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.skills,
+.works {
+  width: 30%;
+  overflow: hidden;
+  height: 350px;
+  min-height: 300px;
+  background-image: url('../image/m11.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center auto;
+}
+
+.works {
+  background-image: url('../image/m22.jpg');
+}
+
+.contact {
+  width: 40%;
+  height: 350px;
+  min-height: 300px;
+  background-image: url('../image/m33.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center auto;
+}
+
+.active {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active i {
+  font-size: 50px;
+  color: #04b962;
+  margin-right: 20px;
+}
+
+.active h3 {
+  font-weight: normal;
+  margin: 0px;
+  font-size: 30px;
+  padding-bottom: 7px;
+}
+
+.active:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.icon-close-bold {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 99999;
+  font-size: 25px;
+  color: #000;
+}
+
+@media screen and (max-width:1000px) {
+
+  .user,
+  .about,
+  .skills,
+  .works,
+  .contact {
+    width: 100%;
+  }
+}

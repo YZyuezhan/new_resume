@@ -1,0 +1,19 @@
+.chart {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.chart_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.chart_view h4 {
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+}
