@@ -193,13 +193,13 @@ img {
   }
 
   10% {
-    top: 20%;
+    top: 35%;
     opacity: 1;
   }
 
   95% {
     opacity: 1;
-    top: 20%;
+    top: 35%;
   }
 
   100% {
@@ -210,7 +210,7 @@ img {
 
 .tips {
   width: 100%;
-  top: 20%;
+  top: 35%;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
@@ -232,9 +232,9 @@ img {
 }
 
 .error {
-  background-color: #742e2e5a;
+  background-color: #742e2e;
   border: 1px solid #f22c2c;
-  color: #ff5e5e;
+  color: #fff;
   letter-spacing: 1px;
 }
 
