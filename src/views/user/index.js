@@ -24,7 +24,7 @@ export default function User() {
   const setPhone = () => {
 
     if (info.substring(0, 2) === '电话') {
-      window.location.href = 'tel:18329935900#mp.weixin.qq.com'
+      window.location.href = 'tel:18329935900'
     }
     if (info.substring(0, 2) === '邮箱') {
       window.location.href = 'mailto:yuezhanhope@163.com'
