@@ -98,6 +98,10 @@
 }
 
 .info {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 100%);
   width: 300px;
   padding: 10px 0px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -105,10 +109,11 @@
   margin: 0px auto;
   line-height: 40px;
   color: #fff;
-  letter-spacing: 3px;
+  letter-spacing: 0px;
   font-size: 18px;
   font-weight: 600;
   text-shadow: none;
   user-select: text;
   border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }

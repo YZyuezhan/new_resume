@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1242184",
+      "name": "发票邮寄地址",
+      "font_class": "fapiaoyoujidizhi",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
       "icon_id": "15838563",
       "name": "close-bold",
       "font_class": "close-bold",
@@ -53,13 +60,6 @@
       "font_class": "shoujidiannao",
       "unicode": "e62f",
       "unicode_decimal": 58927
-    },
-    {
-      "icon_id": "15969342",
-      "name": "邮箱",
-      "font_class": "youxiang",
-      "unicode": "e631",
-      "unicode_decimal": 58929
     },
     {
       "icon_id": "815451",

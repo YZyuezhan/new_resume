@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3392680 */
-  src: url('iconfont.woff2?t=1652344447782') format('woff2'),
-       url('iconfont.woff?t=1652344447782') format('woff'),
-       url('iconfont.ttf?t=1652344447782') format('truetype');
+  src: url('iconfont.woff2?t=1652856571927') format('woff2'),
+       url('iconfont.woff?t=1652856571927') format('woff'),
+       url('iconfont.ttf?t=1652856571927') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fapiaoyoujidizhi:before {
+  content: "\e660";
 }
 
 .icon-close-bold:before {
@@ -39,10 +43,6 @@
 
 .icon-shoujidiannao:before {
   content: "\e62f";
-}
-
-.icon-youxiang:before {
-  content: "\e631";
 }
 
 .icon-weixin:before {
