@@ -63,13 +63,14 @@ img {
 }
 
 .contact {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center auto;
   width: 40%;
   height: 350px;
   min-height: 300px;
   background-image: url('../image/m33.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center auto;
+
 }
 
 .active {
@@ -114,6 +115,129 @@ img {
   color: #000;
 }
 
+.projectCard {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cardInfo {
+  width: 600px;
+  height: 85%;
+  background-color: #fff;
+  position: relative;
+  padding: 20px;
+}
+
+.cardInfo h3 {
+  margin: 0px;
+  width: 100%;
+  text-align: center;
+  color: #666;
+  text-shadow: none;
+  margin-bottom: 20px;
+}
+
+.cardInfo img {
+  width: 100%;
+  max-height: 350px;
+}
+
+.cardbox {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.cardbox p,
+.cardbox b {
+  color: #000;
+  text-shadow: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardbox::-webkit-scrollbar {
+  width: 10px;
+}
+
+.cardbox::-webkit-scrollbar-track {
+  background: rgb(179, 177, 177);
+  border-radius: 10px;
+}
+
+.cardbox::-webkit-scrollbar-thumb {
+  background: #276870ea;
+  border-radius: 10px;
+}
+
+.cardbox::-webkit-scrollbar-thumb:hover {
+  background: #359fadea;
+  border-radius: 10px;
+}
+
+.cardbox::-webkit-scrollbar-thumb:active {
+  background: #21d0e7;
+  border-radius: 10px;
+}
+
+@keyframes move {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+
+  10% {
+    top: 20%;
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+    top: 20%;
+  }
+
+  100% {
+    top: 0%;
+    opacity: 0;
+  }
+}
+
+.tips {
+  width: 100%;
+  top: 20%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.toltips {
+  padding: 10px 40px;
+  border-radius: 8px;
+  text-shadow: none;
+}
+
+.success {
+  background-color: #45926d75;
+  border: 1px solid #04b962;
+  color: #09d472;
+  letter-spacing: 1px;
+}
+
+.error {
+  background-color: #742e2e5a;
+  border: 1px solid #f22c2c;
+  color: #ff5e5e;
+  letter-spacing: 1px;
+}
+
 @media screen and (max-width:1000px) {
 
   .user,
@@ -122,5 +246,9 @@ img {
   .works,
   .contact {
     width: 100%;
+  }
+
+  .cardInfo {
+    width: 85%;
   }
 }

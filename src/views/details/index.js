@@ -2,11 +2,10 @@ import React, { useEffect } from 'react'
 
 import Chart from '../../components/chart'
 import Histogram from '../../components/histogram'
+import Contact from '../../components/contact'
 import WorkDetails from '../works_details'
 import style from '../../assets/style/details.module.css'
 export default function SkillsDetails(props) {
-
-
 
   const close = () => {
     document.getElementById('card').style.height = document.getElementById('card').clientHeight + 'px'
@@ -30,26 +29,36 @@ export default function SkillsDetails(props) {
     { id: 3, proficiency: '60%', label: 'Echarts' },
     { id: 4, proficiency: '40%', label: 'Node.Js' },
     { id: 5, proficiency: '80%', label: 'ES6' },
+    { id: 6, proficiency: '80%', label: 'Less' },
     { id: 6, proficiency: '75%', label: 'Git / SVN' },
+    { id: 6, proficiency: '80%', label: 'ElementUI / VantUI' },
   ]
+  const openProject = (item) => {
+    props.openProject(item)
+  }
   useEffect(() => {
     document.getElementById('card').style.opacity = '0'
     setTimeout(() => {
       document.getElementById('card').style.opacity = '1'
     }, 50)
   }, [])
+
   return (
-    <div className={style.card} id="card">
-      <i className='iconfont icon-close-bold' onClick={close}></i>
-      {/* 展示技能详情 */}
-      {props.type === 'skills' ? <div className={style.card_view}>
-        <div className={style.map}>
-          <Chart list={skillsInfo} />
-        </div>
-        <Histogram list={progressInfo} />
-      </div> : false}
-      {/* 工作经历卡片 */}
-      {props.type === 'works' ? <WorkDetails /> : false}
+    <div className={style.mark}>
+      <div className={style.card} id="card">
+        <i className='iconfont icon-close-bold' onClick={close}></i>
+        {/* 展示技能详情 */}
+        {props.type === 'skills' ? <div className={style.card_view}>
+          <div className={style.map}>
+            <Chart list={skillsInfo} />
+          </div>
+          <Histogram list={progressInfo} />
+        </div> : null}
+        {/* 工作经历卡片 */}
+        {props.type === 'works' ? <WorkDetails openProject={openProject} /> : null}
+        {/* 留言板 */}
+        {props.type === 'contact' ? <Contact close={close} /> : null}
+      </div>
     </div>
   )
 }

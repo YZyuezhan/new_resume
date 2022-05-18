@@ -1,6 +1,6 @@
 import React from 'react'
 import style from '../../assets/style/about.module.css'
-export default function About () {
+export default function About() {
 
   const info = [
     {
@@ -18,7 +18,7 @@ export default function About () {
     {
       id: 3,
       iconName: 'iconfont icon-shoujidiannao',
-      dec: '从事前端开发三年有余，对于Web端、移动端均有开发，熟练开发中后台管理系统，善于用户交互，性价比极高',
+      dec: '从事前端开发三年有余，熟练开发中后台管理系统以及前台官网等多种类项目，责任心强，为人开朗，性价比极高',
       value: '工作经历'
     }
   ]
